@@ -1,0 +1,87 @@
+
+.freq-quest {
+  position: relative;
+  background: linear-gradient(to right, #ff0000, #ff4500);
+  width: clamp(250px, 50%, 90em);
+  margin: 10px;
+  padding: 2em;
+  border-radius: 22px;
+  user-select: none;
+  font-family: Courier, monospace;
+  color: #f0f8ff;
+  overflow: hidden;
+
+  h1 {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #ff4500, #ff7b00);
+    opacity: 0;
+    transition: opacity 0.9s ease;
+    z-index: 0;
+  }
+
+  &.active::before {
+    opacity: 1;
+  }
+
+  &.active > .quest-expnd {
+    background-color: #f0f8ff;
+    max-height: 500px;
+  }
+
+  &.active > .quest-title > .arrow-down {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7.5l8 8-1.41 1.41L12 10.33l-6.59 6.58L4 15.5z"/></svg>');
+  }
+}
+
+.quest-title{
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.quest-expnd{
+  color: black;
+    max-height: 0px;
+    background-color: #f0f8ff17;
+    border-radius: 12px;
+    transition:  max-height 0.4s ease, background-color 0.6s ease;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-size: large;
+  p{
+    padding: 22px;
+    text-indent: 2em;
+  }
+}
+
+.arrow-down {
+  width: 37px;
+  aspect-ratio: 1 / 1;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 16.5l-8-8 1.41-1.41L12 13.67l6.59-6.58L20 8.5z"/></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+
+  /* HOW TO USE 
+  *
+  *<div class="freq-quest" onclick="expandQuest(event)">
+  *      <div class="quest-title">
+  *          <h1>Quanto custa?</h1>
+  *          <div class="arrow-down"></div>
+  *      </div>
+  *      <div class="quest-expnd">
+  *          <p>O valor pode variar dependendo do objetivo do cliente, mas o valor é a partir dos R$2500,00</p>
+  *      </div>
+  *  </div>
+  *
+  */
