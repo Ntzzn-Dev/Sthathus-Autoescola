@@ -1,8 +1,19 @@
-body, html {
+:root {
+	--cor-primaria: #2b51fa;
+	--cor-secundaria: #1a1a1a;
+	--texto-claro: #f1f1f1;
+	--texto-escuro: #333;
+	--cor-icones: #f1f1f1
+}
+
+html, body {
 	margin: 0;
 	padding: 0;
+	width: 100%;
 	height: 100%;
-}
+	overflow-x: hidden;
+  }
+  
 
 .mapa-container {
   width: 100%;
