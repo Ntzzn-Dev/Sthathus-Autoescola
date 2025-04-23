@@ -7,9 +7,27 @@
     <link rel="stylesheet" href="servicos.css" />
     <link rel="stylesheet" href="background.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="sumary.css" />
     <title>Autoescola</title>
 </head>
 <body>
+  <nav>
+    <ul>
+        <li>
+            <a href="#service" title="Serviços">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#f6f5f4" viewBox="0 0 24 24">
+                    <path d="M12 3l10 9h-3v9h-6v-6H11v6H5v-9H2z"/>
+                </svg>
+            </a>
+        </li>
+        <li> 
+            <a href="#map" title="Mapa">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.7 15C4.03377 15.6353 3 16.5205 3 17.4997C3 19.4329 7.02944 21 12 21C16.9706 21 21 19.4329 21 17.4997C21 16.5205 19.9662 15.6353 18.3 15M12 9H12.01M18 9C18 13.0637 13.5 15 12 18C10.5 15 6 13.0637 6 9C6 5.68629 8.68629 3 12 3C15.3137 3 18 5.68629 18 9ZM13 9C13 9.55228 12.5523 10 12 10C11.4477 10 11 9.55228 11 9C11 8.44772 11.4477 8 12 8C12.5523 8 13 8.44772 13 9Z" stroke="#f6f5f4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </a>
+        </li>
+    </ul>
+  </nav>
+
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: rgb(68, 68, 68);">
         <div style="height: 60vh; width: 90vw; overflow: hidden;">
             <div class="kenburns-top">
@@ -17,7 +35,7 @@
             </div>
         </div>
 
-        <section class="services">
+        <section class="services" id="service">
             <h1>Serviços oferecidos</h1>
             <div class="service-aba">
 
@@ -81,7 +99,7 @@
 
         <a href='https://wa.me/86994695730' class="botao-wpp"> Fale conosco </a>
 
-        <div class="mapa-container">
+        <div class="mapa-container" id="map">
             <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.604456675568!2d-42.18296039999999!3d-4.8377805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7918d81e995a733%3A0xbc8d3daafdceb37c!2sAutoescola%20Status!5e0!3m2!1spt-BR!2sbr!4v1745278084671!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>

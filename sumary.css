@@ -1,0 +1,27 @@
+
+/* Sumário fixo na esquerda */
+nav {
+  position: fixed;
+  top: 50%;
+  background-color: #333;
+  padding: 20px;
+  transform: translate(50%, -50%);
+  z-index: 1;
+  border-radius: 17px;
+  ul {
+    padding: 0px 12px;
+    list-style: none;
+    li {
+      margin: 20px 0;
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      a:hover {
+        color: #ff9800;
+      }
+    }
+  }
+}
