@@ -1,160 +1,213 @@
-::-webkit-scrollbar{
-    width: 6px;
-}
+.cards-container {
+  position: relative;
+  width: 100%;
+  height: 39em;
+  overflow: hidden;
+  display: flex;
+  background-color: #202020;
+  flex-direction: column;
+  color: #cbe4cb;
+  font-family: "Courier New", Courier, monospace;
+  align-items: center;
+  padding: 5em;
+  margin: 17px;
 
-::-webkit-scrollbar-track{
-    background: rgba(255,255,255,0.23);
-}
-
-::-webkit-scrollbar-thumb{
-    background: rgba(0, 0, 0, 0.288);
-    height: 10%;
-}
-
-.cardoverlay{
-    position: absolute;
-    transform-origin: bottom center;
-  
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  & h1,
+  h2,
+  h3 {
     text-align: center;
-  
-    perspective: 1000px;
-    z-index: 0;
-    transition: bottom 0.3s ease, transform 0.4s ease, right 0.3s ease;
+  }
+}
+
+.cardoverlay {
+  position: absolute;
+  transform-origin: bottom center;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+
+  perspective: 1000px;
+  z-index: 0;
+  transition: bottom 0.3s ease, transform 0.4s ease, right 0.3s ease;
 }
 .cardoverlay:active {
-    z-index: 1;
-    transform-origin: center center !important;
-    bottom: 50% !important;
-    right: 50% !important;
-    transform: translate(50%, 50%) scale(1.2) rotate(0deg) !important;
-    
-    & .card {
-      transform: rotateY(180deg);
-    }
+  z-index: 1;
+  transform-origin: center center !important;
+  bottom: 50% !important;
+  right: 50% !important;
+  transform: translate(50%, 50%) scale(1.2) rotate(0deg) !important;
+
+  & .card {
+    transform: rotateY(180deg);
+  }
 }
 
-.card{
-    background-color: #afd9bf;
-    aspect-ratio: 17 / 26;
-    height: 34vh;
-    border-radius: 22px;
-    display: flex;
-    flex-direction: column;
-    max-height: 100%;
-    box-shadow: 0px 8px 20px 7px #2f2f2f;
-    
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    user-select: none;
-  
-     & .front{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-    }
-    
-    & .back {
-      transform: rotateY(180deg);
-      backface-visibility: hidden;
-      display: flex;
-      height: 100%;
-    }
-}
+.card {
+  background-color: #afd9bf;
+  aspect-ratio: 17 / 26;
+  height: 26em;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  box-shadow: 0px 8px 20px 7px #2f2f2f;
 
-.internCard{
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #242927;
-    aspect-ratio: 1 /1;
-    margin: 10px;
-    border-radius: 12px;
-}
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  user-select: none;
 
-.infoCard{
-    background-color: #cbe4cb; 
-    flex: 1; 
-    margin: 0px 10px 10px 10px;
-    border-radius: 12px;
-    overflow: overlay;
-    max-height: 300px;
-    color: #252d25;
-    font-family: system-ui;
-    font-size: larger;
-  
-    &  p{
-      margin: 3px 0px;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-}
-.infoCard h1, .infoCardBack h1{
-    margin: 7px 0px 0px 0px;
-    font-size: 32px;
-}
-
-.infoCardBack{
-    background-color: #cbe4cb;
-    margin: 10px;
-    border-radius: 12px;
-    overflow: overlay;
-    color: #252d25;
-    font-family: system-ui;
-    font-size: larger;
-    flex: 1; 
-}
-
-.card-label{
-    color: white;
-    font-size: 40px;
+  & .front {
     position: absolute;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
-    padding: 0px 50px;  
-    border-bottom: 2px solid white;
-  
-    right: 180px;
-    bottom: 35px;
-  
-    margin: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  & .back {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    display: flex;
+    height: 100%;
+  }
+}
+
+.internCard {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #242927;
+  aspect-ratio: 1 /1;
+  margin: 10px;
+  border-radius: 12px;
+}
+
+.infoCard {
+  background-color: #cbe4cb;
+  flex: 1;
+  margin: 0px 10px 10px 10px;
+  border-radius: 12px;
+  overflow: overlay;
+  max-height: 300px;
+  color: #252d25;
+  font-family: system-ui;
+  font-size: larger;
+
+  & p {
+    margin: 3px 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.infoCard h1,
+.infoCardBack h1 {
+  margin: 7px 0px 0px 0px;
+  font-size: 32px;
+}
+
+.infoCardBack {
+  background-color: #cbe4cb;
+  margin: 10px;
+  border-radius: 12px;
+  overflow: overlay;
+  color: #252d25;
+  font-family: system-ui;
+  font-size: larger;
+  flex: 1;
+}
+
+.card-label {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  padding: 0px 50px;
+  border-bottom: 2px solid white;
+
+  right: 180px;
+  bottom: 35px;
+
+  margin: 0;
 }
 
 #Mobi {
-    transform: rotate(10deg) scale(0.9);
-    inset: auto 80px 110px auto;
-    .card {
-      .front {
-        .internCard {
-          background-image: url("src/FiatMobi.webp");
-        }
+  right: 50%;
+  bottom: 110px;
+  transform: translateX(50%) rotate(10deg) scale(0.9) translateX(175px);
+  .card {
+    .front {
+      .internCard {
+        background-image: url("src/FiatMobi.webp");
       }
     }
+  }
 }
 #Onix {
-    transform: rotate(-10deg) scale(0.9);
-    inset: auto 400px 110px auto;
-    .card {
-      .front {
-        .internCard {
-          background-image: url("src/chevOnix.png");
-        }
+  right: 50%;
+  bottom: 110px;
+  transform: translateX(50%) rotate(-10deg) scale(0.9) translateX(-175px);
+  .card {
+    .front {
+      .internCard {
+        background-image: url("src/chevOnix.png");
       }
     }
+  }
 }
 #Kwid {
-    inset: auto 240px 90px auto;
-    .card {
-      .front {
-        .internCard {
-          background-image: url("src/renaultKwid.png");
-        }
+  right: 50%;
+  bottom: 90px;
+  transform: translateX(50%);
+  .card {
+    .front {
+      .internCard {
+        background-image: url("src/renaultKwid.png");
       }
     }
+  }
+}
+
+.cardoverlay:hover:not(:active) {
+  &#Mobi {
+    transform: translateX(50%) rotate(10deg) scale(0.92) translateX(175px) !important;
+  }
+  &#Onix {
+    transform: translateX(50%) rotate(-10deg) scale(0.92) translateX(-175px) !important;
+  }
+  &#Kwid {
+    transform: translateX(50%) scale(1.02) !important;
+  }
+}
+
+@media (max-width: 865px) {
+  .cards-container {
+    height: 38vh;
+  }
+
+  #Mobi {
+    transform: translateX(50%) rotate(10deg) scale(0.54) translateX(175px);
+  }
+  #Onix {
+    transform: translateX(50%) rotate(-10deg) scale(0.54) translateX(-175px);
+  }
+  #Kwid {
+    transform: translateX(50%) scale(0.6);
+  }
+
+  .cardoverlay:hover:not(:active) {
+    &#Mobi {
+      transform: translateX(50%) rotate(10deg) scale(0.552) translateX(175px) !important;
+    }
+    &#Onix {
+      transform: translateX(50%) rotate(-10deg) scale(0.552) translateX(-175px) !important;
+    }
+    &#Kwid {
+      transform: translateX(50%) scale(0.62) !important;
+    }
+  }
 }

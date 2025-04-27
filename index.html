@@ -1,186 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="cards.css" />
     <link rel="stylesheet" href="servicos.css" />
     <link rel="stylesheet" href="background.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="carrosel.css" />
+    <link rel="stylesheet" href="sumary.css" />
+    <link rel="stylesheet" href="contato.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>Autoescola</title>
-</head>
-<body>
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: rgb(68, 68, 68);">
-        <div style="height: 60vh; width: 90vw; overflow: hidden;">
-            <div class="kenburns-top">
-    
+  </head>
+  <body>
+    <!-- Barra lateral -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#service" title="Serviços">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#f6f5f4"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 3l10 9h-3v9h-6v-6H11v6H5v-9H2z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#map" title="Mapa">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M5.7 15C4.03377 15.6353 3 16.5205 3 17.4997C3 19.4329 7.02944 21 12 21C16.9706 21 21 19.4329 21 17.4997C21 16.5205 19.9662 15.6353 18.3 15M12 9H12.01M18 9C18 13.0637 13.5 15 12 18C10.5 15 6 13.0637 6 9C6 5.68629 8.68629 3 12 3C15.3137 3 18 5.68629 18 9ZM13 9C13 9.55228 12.5523 10 12 10C11.4477 10 11 9.55228 11 9C11 8.44772 11.4477 8 12 8C12.5523 8 13 8.44772 13 9Z"
+                  stroke="#f6f5f4"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="fundo">
+      <!-- Carrossel -->
+      <div class="carrossel-container">
+        <button class="btn prev">&#10094;</button>
+
+        <div class="carrossel">
+          <section class="slide">
+            <div class="imgpulando"></div>
+            <div class="overlayText">
+              <h1>Título 1</h1>
+              <p>Descrição aaaaaaaaaaaaa</p>
             </div>
+          </section>
+
+          <section class="slide">
+            <img src="src/fachada.webp" alt="Imagem 2" />
+            <div class="overlayText">
+              <h1>Título 2</h1>
+              <p>Descrição aaaaaaaaaaaaa</p>
+            </div>
+          </section>
+
+          <section class="slide">
+            <img src="src/fachada.webp" alt="Imagem 3" />
+            <div class="overlayText">
+              <h1>Título 3</h1>
+              <p>Descrição aaaaaaaaaaaaa</p>
+            </div>
+          </section>
+
+          <section class="slide">
+            <img src="src/fachada.webp" alt="Imagem 4" />
+            <div class="overlayText">
+              <h1>Título 4</h1>
+              <p>Descrição aaaaaaaaaaaaa</p>
+            </div>
+          </section>
         </div>
 
-        <section class="services">
-            <h1>Serviços oferecidos</h1>
-            <div class="service-aba">
+        <button class="btn next">&#10095;</button>
+      </div>
 
-                <div class="item">
-                    <div class="icon cnh"></div>
-                    <header class="title-service">
-                        <p>Primeira habilitação (categorias A, B, AB) </p>
-                        <section class="info-services">
-                            Aumentamos a letra da sua carteira de motorista
-                        </section>
-                    </header>
-                </div>
+      <!-- Lema -->
 
-                <div class="item">
-                    <div class="icon letra"></div>
-                    <header class="title-service">
-                        <p>Adição de categoria</p>
-                        <section class="info-services">
-                            Aumentamos a letra da sua carteira de motorista
-                        </section>
-                    </header>
-                </div>
-                
+      <div class="cards-container">
+        <h1>AUTOESCOLA STHATHUS</h1>
+        <h2>Cidadão consciente, trânsito seguro.</h2>
+        <h3>Desde 1998</h3>
+        <!-- Mobi -->
+        <div class="cardoverlay" id="Mobi">
+          <div class="card">
+            <div class="front">
+              <div class="internCard"></div>
+              <div class="infoCard">
+                <h1 title="Fiat Mobi">Fiat Mobi</h1>
+                <p
+                  title="Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia"
+                >
+                  Esse veiculo é muito usado na Educação de novos condutores,
+                  principalmente por sua simplicidade na hora do ensino, sua
+                  economia e autonomia
+                </p>
+              </div>
             </div>
-            
-            <div class="service-aba">
-                
-                <div class="item">
-                    <div class="icon renew"></div>
-                    <header class="title-service">
-                        <p>Renovação de CNH</p>
-                        <section class="info-services">
-                            Aumentamos a letra da sua carteira de motorista
-                        </section>
-                    </header>
-                </div>
-                
-                <div class="item">
-                    <div class="icon car"></div>
-                    <header class="title-service">
-                        <p>Curso de reciclagem </p>
-                        <section class="info-services">
-                            Aumentamos a letra da sua carteira de motorista
-                        </section>
-                    </header>
-                </div>
-                
-                <div class="item">
-                    <div class="icon recycle"></div>
-                    <header class="title-service">
-                        <p>Aula prática individual </p>
-                        <section class="info-services">
-                            Aumentamos a letra da sua carteira de motorista
-                        </section>
-                    </header>
-                </div>
+            <div class="back">
+              <div class="infoCardBack">
+                <h1 title="Fiat Mobi">Fiat Mobi</h1>
+                <p
+                  title="Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia"
+                >
+                  Esse veiculo é muito usado na Educação de novos condutores,
+                  principalmente por sua simplicidade na hora do ensino, sua
+                  economia e autonomia
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
+
+        <!-- Onix -->
+        <div class="cardoverlay" id="Onix">
+          <div class="card">
+            <div class="front">
+              <div class="internCard"></div>
+              <div class="infoCard">
+                <h1 title="Chevrolet Onix">Chevrolet Onix</h1>
+                <p
+                  title="Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia"
+                >
+                  Esse veiculo é muito usado na Educação de novos condutores,
+                  principalmente por sua simplicidade na hora do ensino, sua
+                  economia e autonomia
+                </p>
+              </div>
+            </div>
+            <div class="back">
+              <div class="infoCardBack">
+                <h1 title="Chevrolet Onix">Chevrolet Onix</h1>
+                <p
+                  title="Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia"
+                >
+                  Esse veiculo é muito usado na Educação de novos condutores,
+                  principalmente por sua simplicidade na hora do ensino, sua
+                  economia e autonomia
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kwid -->
+        <div class="cardoverlay" id="Kwid">
+          <div class="card">
+            <div class="front">
+              <div class="internCard"></div>
+              <div class="infoCard">
+                <h1 title="Renault Kwid">Renault Kwid</h1>
+                <p
+                  title="Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia"
+                >
+                  Esse veiculo é muito usado na Educação de novos condutores,
+                  principalmente por sua simplicidade na hora do ensino, sua
+                  economia e autonomia
+                </p>
+              </div>
+            </div>
+            <div class="back">
+              <div class="infoCardBack">
+                <h1 title="Renault Kwid">Renault Kwid</h1>
+                <p
+                  title="Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia"
+                >
+                  Esse veiculo é muito usado na Educação de novos condutores,
+                  principalmente por sua simplicidade na hora do ensino, sua
+                  economia e autonomia
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Serviços oferecidos -->
+
+      <section class="services" id="service">
+        <h1>Serviços oferecidos</h1>
+        <div class="service-aba">
+          <div class="item">
+            <div class="icon cnh"></div>
+            <header class="title-service">
+              <p>Primeira habilitação (categorias A, B, AB)</p>
+              <section class="info-services">
+                Aumentamos a letra da sua carteira de motorista
+              </section>
+            </header>
+          </div>
+
+          <div class="item">
+            <div class="icon letra"></div>
+            <header class="title-service">
+              <p>Adição de categoria</p>
+              <section class="info-services">
+                Aumentamos a letra da sua carteira de motorista
+              </section>
+            </header>
+          </div>
+        </div>
+
+        <div class="service-aba">
+          <div class="item">
+            <div class="icon renew"></div>
+            <header class="title-service">
+              <p>Renovação de CNH</p>
+              <section class="info-services">
+                Aumentamos a letra da sua carteira de motorista
+              </section>
+            </header>
+          </div>
+
+          <div class="item">
+            <div class="icon car"></div>
+            <header class="title-service">
+              <p>Curso de reciclagem</p>
+              <section class="info-services">
+                Aumentamos a letra da sua carteira de motorista
+              </section>
+            </header>
+          </div>
+
+          <div class="item">
+            <div class="icon recycle"></div>
+            <header class="title-service">
+              <p>Aula prática individual</p>
+              <section class="info-services">
+                Aumentamos a letra da sua carteira de motorista
+              </section>
+            </header>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contato -->
+
+      <section class="contato">
+        <section class="img-contato">
+          <img src="src/chevOnix.png" />
         </section>
+        <section class="text-contato">
+          <h1>Entre em contato conosco</h1>
+          <p>
+            Estamos sempre prontos para ajudar! Se você tiver alguma dúvida ou
+            precisar de mais informações sobre nossos produtos e serviços, não
+            hesite em nos chamar. Nossa equipe está disponível para atendê-lo
+            rapidamente e com todo o suporte necessário para garantir que sua
+            experiência seja a melhor possível.
+          </p>
+          <a href="https://wa.me/86994695730" class="botao-wpp" target="_blank">
+            Fale conosco
+          </a>
+        </section>
+      </section>
 
-        <hr>
+      <hr />
 
-        <a href='https://wa.me/86994695730' class="botao-wpp"> Fale conosco </a>
+      <!-- mapa -->
 
-        <div class="mapa-container">
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.604456675568!2d-42.18296039999999!3d-4.8377805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7918d81e995a733%3A0xbc8d3daafdceb37c!2sAutoescola%20Status!5e0!3m2!1spt-BR!2sbr!4v1745278084671!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+      <div class="mapa-container" id="map">
+        <iframe
+          class="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.604456675568!2d-42.18296039999999!3d-4.8377805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7918d81e995a733%3A0xbc8d3daafdceb37c!2sAutoescola%20Status!5e0!3m2!1spt-BR!2sbr!4v1745278084671!5m2!1spt-BR!2sbr"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
 
+    <!-- rodape -->
+
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h2>Autoescola Sthathus</h2>
-                <h3>Cidadão consciente, trânsito seguro.</h3>
-                <p>Transformando alunos em motoristas responsáveis desde 1998.</p>
-            </div>
-        
-            <div class="footer-section">
-                <h4>Contato</h4>
-                <a href='https://wa.me/86994695730'>📞 (86) 99469-5730</a>
-                <a href="mailto:newpescaartedapesca@gmail.com">✉️ newpescaartedapesca@gmail.com</a>
-            </div>
-        
-            <div class="footer-section">
-                <h4>Endereço</h4>
-                <p>Rua São Luís, 1526</p>
-                <p>Campo Maior - PI, 64280-000</p>
-            </div>
-        
-            <div class="footer-section">
-                <h4>Horários</h4>
-                <p>Seg a Sex: 08h às 18h</p>
-                <p>Sábados: 08h às 12h</p>
-            </div>
-        
-            <div class="footer-section">
-                <h4>Redes Sociais</h4>
-                <p>
-                <a href="#">WhatsApp</a>
-                </p>
-            </div>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h2>Autoescola Sthathus</h2>
+          <h3>Cidadão consciente, trânsito seguro.</h3>
+          <p>Transformando alunos em motoristas responsáveis desde 1998.</p>
         </div>
-      
-        <div class="footer-bottom">
-            <p>&copy; 2025 Autoescola Sthathus. Todos os direitos reservados.</p>
+
+        <div class="footer-section">
+          <h4>Contato</h4>
+          <a href="https://wa.me/86994695730" target="_blank">
+            📞 (86) 99469-5730
+          </a>
+          <a href="mailto:newpescaartedapesca@gmail.com">
+            ✉️ newpescaartedapesca@gmail.com
+          </a>
         </div>
+
+        <div class="footer-section">
+          <h4>Endereço</h4>
+          <p>Rua São Luís, 1526</p>
+          <p>Campo Maior - PI, 64280-000</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Horários</h4>
+          <p>Seg a Sex: 08h às 18h</p>
+          <p>Sábados: 08h às 12h</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Redes Sociais</h4>
+          <p>
+            <a href="https://wa.me/86994695730" target="_blank">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Autoescola Sthathus. Todos os direitos reservados.</p>
+      </div>
     </footer>
-    <!-- Mobi -->
-    <!--<div class="cardoverlay" onmouseenter="mouseIn(event, 10, 0.9)" onmouseleave="mouseOut(event, 10, 0.9)"  id="Mobi">
-        <div class="card">
-            <div class="front">
-                <div class="internCard"></div>
-                <div class="infoCard">
-                    <h1 title="Fiat Mobi">Fiat Mobi</h1>
-                    <p title="Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia">Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia</p>
-                </div>
-            </div>
-            <div class="back">
-                <div class="infoCardBack">
-                    <h1 title="Fiat Mobi">Fiat Mobi</h1>
-                    <p title="Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia" >Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- Onix -->
-    <!--<div class="cardoverlay" onmouseenter="mouseIn(event, -10, 0.9)" onmouseleave="mouseOut(event, -10, 0.9)"  id="Onix">
-        <div class="card">
-            <div class="front">
-                <div class="internCard"></div>
-                <div class="infoCard">
-                    <h1 title="Chevrolet Onix">Chevrolet Onix</h1>
-                    <p title="Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia">Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia</p>
-                </div>
-            </div>
-            <div class="back">
-                <div class="infoCardBack">
-                    <h1 title="Chevrolet Onix">Chevrolet Onix</h1>
-                    <p title="Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia" >Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- Kwid -->
-    <!--<div class="cardoverlay" onmouseenter="mouseIn(event, 0, 1)" onmouseleave="mouseOut(event, 0, 1)"  id="Kwid">
-        <div class="card">
-            <div class="front">
-                <div class="internCard"></div>
-                <div class="infoCard">
-                    <h1 title="Renault Kwid">Renault Kwid</h1>
-                    <p title="Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia">Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia</p>
-                </div>
-            </div>
-            <div class="back">
-                <div class="infoCardBack">
-                    <h1 title="Renault Kwid">Renault Kwid</h1>
-                    <p title="Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia" >Esse veiculo é muito usado na Educação de novos condutores, principalmente por sua simplicidade na hora do ensino, sua economia e autonomia</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <script src="script.js"></script>
-</body>
+    <script src="carrosel.js"></script>
+  </body>
 </html>
