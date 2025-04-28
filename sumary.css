@@ -23,3 +23,141 @@ nav {
     }
   }
 }
+
+.custom-shape {
+  width: 960px;
+  height: 546px;
+  background-image: url(src/CampoMaior.jpg);
+  overflow: hidden;
+  position: relative;
+  mask: url(#meuMask);
+  -webkit-mask: url(#meuMask);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.classg {
+  transform: scale(0.6);
+}
+
+.desc {
+  width: 43em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 52px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  h1 {
+    font-size: 45px;
+  }
+  p {
+    font-size: 25px;
+  }
+}
+
+.cidade {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  border-radius: 42px;
+  padding: 10px;
+  margin: 50px;
+  max-width: 100vw;
+}
+
+.logo-section {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  border-radius: 42px;
+  padding: 10px;
+  margin: 50px;
+  max-width: 100vw;
+}
+
+.logo-auto {
+  width: 17em;
+  padding: 14px;
+  border-radius: 35px;
+}
+
+.logotipo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 31em;
+  background: linear-gradient(to bottom, #1e1305, #33333300);
+  color: white;
+  display: flex;
+  z-index: 1000;
+  padding: 80px 130px;
+  pointer-events: none;
+  align-items: flex-start;
+  img {
+    width: 96px;
+  }
+  h2 {
+    padding: 15px 89px;
+    font-family: system-ui;
+    font-weight: 1000;
+    font-size: xxx-large;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 768px) {
+  .cidade {
+    flex-direction: column;
+  }
+  .classg {
+    transform: scale(0.48);
+  }
+  .custom-shape {
+    width: 768px;
+    height: 436px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+  .cidade {
+    flex-direction: column;
+    border-radius: 24px;
+  }
+  .classg {
+    transform: scale(0.26);
+  }
+  .custom-shape {
+    width: 416px;
+    height: 236px;
+  }
+  .desc {
+    width: 26em;
+  }
+}
+
+@media (max-width: 425px) {
+  .cidade {
+    flex-direction: column;
+    border-radius: 24px;
+  }
+  .classg {
+    transform: scale(0.2);
+  }
+  .custom-shape {
+    width: 320px;
+    height: 182px;
+  }
+  .desc {
+    width: 26em;
+  }
+}

@@ -22,7 +22,7 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  width: 533px;
+  max-width: 533px;
   text-align: center;
   font-size: 21px;
   font-weight: bold;
