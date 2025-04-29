@@ -1,6 +1,7 @@
 .contato {
   display: flex;
   align-items: stretch;
+  margin: 60px;
 }
 
 .img-contato {

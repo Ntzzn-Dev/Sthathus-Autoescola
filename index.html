@@ -36,13 +36,30 @@
         <li>
           <a href="#service" title="Serviços">
             <svg
+              fill="#ffffff"
+              viewBox="-2.4 -2.4 28.80 28.80"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="#f6f5f4"
-              viewBox="0 0 24 24"
+              enable-background="new 0 0 24 24"
+              stroke="#ffffff"
+              stroke-width="0.00024000000000000003"
             >
-              <path d="M12 3l10 9h-3v9h-6v-6H11v6H5v-9H2z" />
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="#000000"
+                stroke-width="1.8240000000000003"
+              >
+                <path
+                  d="M2,3v18c0,0.6,0.4,1,1,1h5V2H3C2.4,2,2,2.4,2,3z M21,2H10v20h11c0.6,0,1-0.4,1-1V3C22,2.4,21.6,2,21,2z"
+                ></path>
+              </g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M2,3v18c0,0.6,0.4,1,1,1h5V2H3C2.4,2,2,2.4,2,3z M21,2H10v20h11c0.6,0,1-0.4,1-1V3C22,2.4,21.6,2,21,2z"
+                ></path>
+              </g>
             </svg>
           </a>
         </li>
@@ -76,8 +93,11 @@
 
     <div class="fundo">
       <div class="logotipo" id="inicio">
-        <img src="src/Logo.png" alt="Logo" />
-        <h2>Autoescola Sthathus</h2>
+        <div class="logos">
+          <img src="src/Logo.png" alt="Logo" />
+          <h2>Autoescola Sthathus</h2>
+        </div>
+        <hr class="hr-initial" />
       </div>
       <!-- Carrossel -->
       <div class="carrossel-container">
@@ -85,34 +105,92 @@
 
         <div class="carrossel">
           <section class="slide">
-            <div class="imgpulando"></div>
+            <div class="kenburns-top">
+              <img class="jornada-img" src="src/Jornada.png" alt="Jornada" />
+            </div>
             <div class="overlayText">
-              <h1>Título 1</h1>
-              <p>Descrição aaaaaaaaaaaaa</p>
+              <div class="text-carrossel">
+                <h1>Sua Jornada Começa Aqui</h1>
+                <p>
+                  Na nossa autoescola, preparamos você para dirigir com
+                  segurança e confiança.
+                </p>
+              </div>
+              <div class="contato-carrossel">
+                <a
+                  href="https://wa.me/86994695730"
+                  class="botao-wpp"
+                  target="_blank"
+                >
+                  Fale conosco
+                </a>
+              </div>
             </div>
           </section>
 
           <section class="slide">
             <img src="src/fachada.webp" alt="Imagem 2" />
             <div class="overlayText">
-              <h1>Título 2</h1>
-              <p>Descrição aaaaaaaaaaaaa</p>
+              <div class="text-carrossel">
+                <h1>Sua Jornada Começa Aqui</h1>
+                <p>
+                  Na nossa autoescola, preparamos você para dirigir com
+                  segurança e confiança.
+                </p>
+              </div>
+              <div class="contato-carrossel">
+                <a
+                  href="https://wa.me/86994695730"
+                  class="botao-wpp"
+                  target="_blank"
+                >
+                  Fale conosco
+                </a>
+              </div>
             </div>
           </section>
 
           <section class="slide">
             <img src="src/fachada.webp" alt="Imagem 3" />
             <div class="overlayText">
-              <h1>Título 3</h1>
-              <p>Descrição aaaaaaaaaaaaa</p>
+              <div class="text-carrossel">
+                <h1>Sua Jornada Começa Aqui</h1>
+                <p>
+                  Na nossa autoescola, preparamos você para dirigir com
+                  segurança e confiança.
+                </p>
+              </div>
+              <div class="contato-carrossel">
+                <a
+                  href="https://wa.me/86994695730"
+                  class="botao-wpp"
+                  target="_blank"
+                >
+                  Fale conosco
+                </a>
+              </div>
             </div>
           </section>
 
           <section class="slide">
             <img src="src/fachada.webp" alt="Imagem 4" />
             <div class="overlayText">
-              <h1>Título 4</h1>
-              <p>Descrição aaaaaaaaaaaaa</p>
+              <div class="text-carrossel">
+                <h1>Sua Jornada Começa Aqui</h1>
+                <p>
+                  Na nossa autoescola, preparamos você para dirigir com
+                  segurança e confiança.
+                </p>
+              </div>
+              <div class="contato-carrossel">
+                <a
+                  href="https://wa.me/86994695730"
+                  class="botao-wpp"
+                  target="_blank"
+                >
+                  Fale conosco
+                </a>
+              </div>
             </div>
           </section>
         </div>
@@ -123,7 +201,7 @@
       <!-- Lema -->
 
       <div class="cards-container">
-        <h1>AUTOESCOLA STHATHUS</h1>
+        <h1 id="title-typing">AUTOESCOLA STHATHUS...</h1>
         <h2>Cidadão consciente, trânsito seguro.</h2>
         <h3>Desde 1998</h3>
         <!-- Mobi -->
@@ -352,6 +430,10 @@
           <img src="src/Logo.png" class="logo-auto" />
         </section>
       </section>
+
+      <a href="https://wa.me/86994695730" class="botao-wpp" target="_blank">
+        Fale conosco
+      </a>
 
       <!-- mapa -->
 
