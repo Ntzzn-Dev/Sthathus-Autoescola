@@ -10,8 +10,14 @@
   margin: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   transition: margin 0.4s ease, border-radius 0.4s ease;
+
+  & img {
+    max-width: 43em;
+    min-width: 30em;
+  }
 }
 
 .text-contato {

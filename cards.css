@@ -218,18 +218,23 @@
 .cardoverlay:hover:not(:active) {
   &#card1-3 {
     transform: translateX(50%) rotate(-10deg) scale(0.92) translateX(-175px) !important;
+    z-index: 1;
   }
   &#card2-3 {
     transform: translateX(50%) scale(1.02) !important;
+    z-index: 1;
   }
   &#card3-3 {
     transform: translateX(50%) rotate(10deg) scale(0.92) translateX(175px) !important;
+    z-index: 1;
   }
   &#card1-2 {
     transform: translateX(50%) rotate(-10deg) scale(0.92) translateX(-75px) !important;
+    z-index: 1;
   }
   &#card2-2 {
     transform: translateX(50%) rotate(10deg) scale(0.92) translateX(75px) !important;
+    z-index: 1;
   }
 }
 
@@ -257,18 +262,23 @@
   .cardoverlay:hover:not(:active) {
     &#card1-3 {
       transform: translateX(50%) rotate(-10deg) scale(0.552) translateX(-175px) !important;
+      z-index: 1;
     }
     &#card2-3 {
       transform: translateX(50%) scale(0.62) !important;
+      z-index: 1;
     }
     &#card3-3 {
       transform: translateX(50%) rotate(10deg) scale(0.552) translateX(175px) !important;
+      z-index: 1;
     }
     &#card1-2 {
       transform: translateX(50%) rotate(-10deg) scale(0.552) translateX(-75px) !important;
+      z-index: 1;
     }
     &#card2-2 {
       transform: translateX(50%) rotate(10deg) scale(0.552) translateX(75px) !important;
+      z-index: 1;
     }
   }
 }
