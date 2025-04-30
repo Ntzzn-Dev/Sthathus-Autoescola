@@ -43,7 +43,7 @@ nav {
 }
 
 .desc {
-  width: 43em;
+  max-width: 43em;
   color: white;
   display: flex;
   flex-direction: column;
@@ -107,10 +107,11 @@ nav {
   pointer-events: none;
   align-items: flex-start;
   img {
+    height: 96px;
     width: 96px;
   }
   h2 {
-    padding: 15px 89px;
+    padding: 15px 2em;
     font-family: system-ui;
     font-weight: 1000;
     font-size: xxx-large;
@@ -119,14 +120,15 @@ nav {
   .logos {
     display: flex;
     padding: 1% 4%;
+    align-items: center;
   }
 }
 
 hr {
   width: 100%;
   height: 12px;
-  background-color: var(--cor-primaria);
-  border-color: var(--cor-secundaria);
+  background-color: var(--divisorias);
+  border-color: var(--divisorias);
 }
 
 .hr-initial {
@@ -159,7 +161,15 @@ hr {
     height: 236px;
   }
   .desc {
-    width: 26em;
+    padding: 1em;
+  }
+  .logotipo {
+    h2 {
+      padding: 15px 0.5em;
+    }
+  }
+  nav {
+    padding: 0px;
   }
 }
 
@@ -176,6 +186,14 @@ hr {
     height: 182px;
   }
   .desc {
-    width: 26em;
+    padding: 0px 13px;
+  }
+  .logotipo {
+    h2 {
+      padding: 15px 0.5em;
+    }
+  }
+  nav {
+    padding: 0px;
   }
 }

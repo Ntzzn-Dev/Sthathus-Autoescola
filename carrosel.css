@@ -22,7 +22,7 @@
 .slide img {
   height: 100%;
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
   display: block;
 }
 
@@ -51,6 +51,10 @@
     margin: 0;
     font-size: 200%;
   }
+  & .contato-carrossel {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .btn {
@@ -72,4 +76,25 @@
 
 .next {
   right: 0;
+}
+
+@media (max-width: 865px) {
+  .carrossel-container {
+    margin-top: 13em;
+    h1 {
+      margin: 0 14px 10px;
+      font-size: 19px;
+    }
+    p {
+      font-size: 16px;
+      height: 0;
+      color: transparent;
+    }
+  }
+
+  .contato-carrossel .botao-wpp {
+    margin: 0;
+    padding: 22px 30px;
+    font-size: 15px;
+  }
 }

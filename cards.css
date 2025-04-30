@@ -6,7 +6,7 @@
   display: flex;
   background-color: #202020;
   flex-direction: column;
-  color: #cbe4cb;
+  color: #973900;
   font-family: "Courier New", Courier, monospace;
   align-items: center;
   padding: 5em;
@@ -65,7 +65,7 @@
 }
 
 .card {
-  background-color: #afd9bf;
+  background: var(--gradient);
   aspect-ratio: 17 / 26;
   height: 26em;
   border-radius: 22px;
@@ -97,20 +97,19 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #242927;
+  background-color: #312c28;
   aspect-ratio: 1 /1;
   margin: 10px;
   border-radius: 12px;
 }
 
 .infoCard {
-  background-color: #cbe4cb;
   flex: 1;
   margin: 0px 10px 10px 10px;
   border-radius: 12px;
   overflow: overlay;
   max-height: 300px;
-  color: #252d25;
+  color: #2d2525;
   font-family: system-ui;
   font-size: larger;
 
@@ -206,7 +205,7 @@
 
 @media (max-width: 865px) {
   .cards-container {
-    height: 38vh;
+    height: 30em;
   }
 
   #Mobi {

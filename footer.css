@@ -15,6 +15,8 @@
 .footer-section {
   flex: 1;
   min-width: 200px;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 .footer-section h4,
