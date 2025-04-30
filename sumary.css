@@ -6,6 +6,7 @@ nav {
   transform: translate(0, -50%);
   z-index: 1;
   border-radius: 0px 17px 17px 0px;
+  transition: padding 0.2s ease;
   ul {
     padding: 0px 12px;
     list-style: none;
@@ -111,7 +112,7 @@ nav {
     width: 96px;
   }
   h2 {
-    padding: 15px 2em;
+    padding: 15px 0px 15px 2em;
     font-family: system-ui;
     font-weight: 1000;
     font-size: xxx-large;
@@ -170,6 +171,8 @@ hr {
   }
   nav {
     padding: 0px;
+    width: 0;
+    overflow: hidden;
   }
 }
 
@@ -190,10 +193,13 @@ hr {
   }
   .logotipo {
     h2 {
+      font-size: xx-large;
       padding: 15px 0.5em;
     }
   }
   nav {
     padding: 0px;
+    width: 0;
+    overflow: hidden;
   }
 }

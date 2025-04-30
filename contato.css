@@ -30,6 +30,7 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 20px;
   color: aliceblue;
+  letter-spacing: 1px;
 
   transition: margin 0.4s ease, border-radius 0.4s ease;
 
@@ -69,9 +70,10 @@
   overflow: hidden;
   pointer-events: auto;
   margin: 35px;
-  font-family: cursive;
+  font-family: monospace;
   font-size: 21px;
-  width: 13ch;
+  width: 15ch;
+  letter-spacing: 0px;
 }
 
 .botao-wpp:hover {

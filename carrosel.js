@@ -42,5 +42,5 @@ function resetAutoplay() {
   intervalo = setInterval(() => {
     index = (index + 1) % sessoes.length;
     updateCarrossel();
-  }, 3000);
+  }, 7000);
 }

@@ -72,7 +72,7 @@
   display: flex;
   flex-direction: column;
   max-height: 100%;
-  box-shadow: 0px 8px 20px 7px #2f2f2f;
+  box-shadow: 0px 8px 20px 7px #232222;
 
   transition: transform 0.6s;
   transform-style: preserve-3d;
@@ -129,11 +129,11 @@
 }
 
 .infoCardBack {
-  background-color: #cbe4cb;
+  background-color: #e4d7cb;
   margin: 10px;
   border-radius: 12px;
   overflow: overlay;
-  color: #252d25;
+  color: #2d2525;
   font-family: system-ui;
   font-size: larger;
   flex: 1;
@@ -154,19 +154,7 @@
   margin: 0;
 }
 
-#Mobi {
-  right: 50%;
-  bottom: 110px;
-  transform: translateX(50%) rotate(10deg) scale(0.9) translateX(175px);
-  .card {
-    .front {
-      .internCard {
-        background-image: url("src/FiatMobi.webp");
-      }
-    }
-  }
-}
-#Onix {
+#card1-3 {
   right: 50%;
   bottom: 110px;
   transform: translateX(50%) rotate(-10deg) scale(0.9) translateX(-175px);
@@ -178,7 +166,7 @@
     }
   }
 }
-#Kwid {
+#card2-3 {
   right: 50%;
   bottom: 90px;
   transform: translateX(50%);
@@ -190,16 +178,58 @@
     }
   }
 }
+#card3-3 {
+  right: 50%;
+  bottom: 110px;
+  transform: translateX(50%) rotate(10deg) scale(0.9) translateX(175px);
+  .card {
+    .front {
+      .internCard {
+        background-image: url("src/FiatMobi.webp");
+      }
+    }
+  }
+}
+#card1-2 {
+  right: 50%;
+  bottom: 110px;
+  transform: translateX(50%) rotate(-10deg) scale(0.9) translateX(-75px);
+  .card {
+    .front {
+      .internCard {
+        background-image: url("src/FiatMobi.webp");
+      }
+    }
+  }
+}
+#card2-2 {
+  right: 50%;
+  bottom: 110px;
+  transform: translateX(50%) rotate(10deg) scale(0.9) translateX(75px);
+  .card {
+    .front {
+      .internCard {
+        background-image: url("src/YamFactor.png");
+      }
+    }
+  }
+}
 
 .cardoverlay:hover:not(:active) {
-  &#Mobi {
-    transform: translateX(50%) rotate(10deg) scale(0.92) translateX(175px) !important;
-  }
-  &#Onix {
+  &#card1-3 {
     transform: translateX(50%) rotate(-10deg) scale(0.92) translateX(-175px) !important;
   }
-  &#Kwid {
+  &#card2-3 {
     transform: translateX(50%) scale(1.02) !important;
+  }
+  &#card3-3 {
+    transform: translateX(50%) rotate(10deg) scale(0.92) translateX(175px) !important;
+  }
+  &#card1-2 {
+    transform: translateX(50%) rotate(-10deg) scale(0.92) translateX(-75px) !important;
+  }
+  &#card2-2 {
+    transform: translateX(50%) rotate(10deg) scale(0.92) translateX(75px) !important;
   }
 }
 
@@ -208,25 +238,51 @@
     height: 30em;
   }
 
-  #Mobi {
-    transform: translateX(50%) rotate(10deg) scale(0.54) translateX(175px);
-  }
-  #Onix {
+  #card1-3 {
     transform: translateX(50%) rotate(-10deg) scale(0.54) translateX(-175px);
   }
-  #Kwid {
+  #card2-3 {
     transform: translateX(50%) scale(0.6);
+  }
+  #card3-3 {
+    transform: translateX(50%) rotate(10deg) scale(0.54) translateX(175px);
+  }
+  #card1-2 {
+    transform: translateX(50%) rotate(-10deg) scale(0.54) translateX(-75px);
+  }
+  #card2-2 {
+    transform: translateX(50%) rotate(10deg) scale(0.54) translateX(75px);
   }
 
   .cardoverlay:hover:not(:active) {
-    &#Mobi {
-      transform: translateX(50%) rotate(10deg) scale(0.552) translateX(175px) !important;
-    }
-    &#Onix {
+    &#card1-3 {
       transform: translateX(50%) rotate(-10deg) scale(0.552) translateX(-175px) !important;
     }
-    &#Kwid {
+    &#card2-3 {
       transform: translateX(50%) scale(0.62) !important;
+    }
+    &#card3-3 {
+      transform: translateX(50%) rotate(10deg) scale(0.552) translateX(175px) !important;
+    }
+    &#card1-2 {
+      transform: translateX(50%) rotate(-10deg) scale(0.552) translateX(-75px) !important;
+    }
+    &#card2-2 {
+      transform: translateX(50%) rotate(10deg) scale(0.552) translateX(75px) !important;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .cards-container {
+    & h1 {
+      font-size: x-large;
+    }
+    & h2 {
+      font-size: larger;
+    }
+    & h3 {
+      font-size: large;
     }
   }
 }

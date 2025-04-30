@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--cor-base);
-  color: var(--texto-claro);
+  color: var(--cor-text-servicos);
   padding: 40px 20px 20px;
   font-family: Arial, sans-serif;
 }
@@ -30,7 +30,7 @@
 .footer-section a {
   color: var(--texto-claro);
   text-decoration: none;
-  display: block; /* ou inline-block */
+  display: block;
   margin: 16px 0px;
 }
 
