@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="carrosel.css" />
     <link rel="stylesheet" href="sumary.css" />
     <link rel="stylesheet" href="contato.css" />
+    <link rel="stylesheet" href="quests.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -588,6 +589,31 @@
         <i class="fab fa-whatsapp"></i> Fale conosco
       </a>
 
+      <!-- Formulario pergunta -->
+
+      <div class="form-container">
+        <h2>📧 Envie uma mensagem</h2>
+        <h5>Garanta que seu e-mail já esteja cadastrado no navegador</h5>
+        <form id="contactForm">
+          <input type="text" id="nome" placeholder="Nome*" required />
+          <input type="email" id="email" placeholder="E-mail*" required />
+          <input type="text" id="telefone" placeholder="Telefone" />
+          <input type="text" id="assunto" placeholder="Assunto" />
+          <textarea
+            id="mensagem"
+            placeholder="Escreva sua Mensagem*"
+            required
+          ></textarea>
+          <label class="checkbox">
+            <input type="checkbox" id="consentimento" required />
+            <p>Eu li e concordo com a política de privacidade.</p>
+          </label>
+          <button type="submit" class="btn-form" id="enviar" disabled>
+            ENVIAR MENSAGEM
+          </button>
+        </form>
+      </div>
+
       <!-- mapa -->
 
       <div class="mapa-container" id="map">
@@ -617,7 +643,7 @@
           <a href="https://wa.me/86994695730" target="_blank">
             📞 (86) 99469-5730
           </a>
-          <a href="mailto:newpescaartedapesca@gmail.com">
+          <a href="#" target="_blank" id="emailtag">
             ✉️ newpescaartedapesca@gmail.com
           </a>
         </div>
