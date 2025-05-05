@@ -21,7 +21,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   const telefone = document.getElementById("telefone").value;
   const mensagem = document.getElementById("mensagem").value;
 
-  const emailDestino = "newpescaartedapesca@gmail.com";
+  const emailDestino = "autoescolasthathus2001@gmail.com";
   const assunto =
     document.getElementById("assunto").value || "Mensagem do site";
   const corpo = `Nome: ${nome} \nEmail: ${email} \nTelefone: ${telefone} \n\n${mensagem}`;
@@ -50,8 +50,8 @@ checkbox.addEventListener("change", function () {
 const link = document.getElementById("emailtag");
 
 if (isMobile) {
-  link.href = "mailto:newpescaartedapesca@gmail.com";
+  link.href = "mailto:autoescolasthathus2001@gmail.com";
 } else {
   link.href =
-    "https://mail.google.com/mail/?view=cm&fs=1&to=newpescaartedapesca@gmail.com";
+    "https://mail.google.com/mail/?view=cm&fs=1&to=autoescolasthathus2001@gmail.com";
 }

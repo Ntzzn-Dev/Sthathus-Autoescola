@@ -13,9 +13,11 @@
 
   & h1 {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 800;
     text-align: center;
     pointer-events: none;
+    font-family: "Tomorrow", sans-serif;
+    letter-spacing: 2px;
   }
 }
 
@@ -30,7 +32,9 @@
   flex: 1;
   p {
     margin: 2px;
-    font-weight: bold;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
   }
 }
 
@@ -48,10 +52,10 @@
   display: flex;
   flex-direction: row;
   text-align: center;
-  padding: 0 8px;
+  padding: 24px 8px;
   box-sizing: border-box;
   border-radius: 4px 22px;
-  margin: 2px;
+  margin: 24px;
   align-items: center;
 }
 
@@ -62,6 +66,8 @@
   padding: 10px;
   height: 100%;
   width: 90%;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
 }
 
 @media (max-width: 865px) {

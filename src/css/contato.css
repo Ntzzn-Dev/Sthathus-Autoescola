@@ -33,7 +33,7 @@
   text-align: center;
   font-size: 21px;
   font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Tomorrow", sans-serif;
   padding: 20px;
   color: aliceblue;
   letter-spacing: 1px;
@@ -42,6 +42,10 @@
 
   & h1 {
     font-size: 30px;
+  }
+  & p {
+    font-family: "Work Sans";
+    font-weight: 400;
   }
 }
 

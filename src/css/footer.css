@@ -17,25 +17,27 @@
   min-width: 200px;
   word-wrap: break-word;
   white-space: normal;
-}
-
-.footer-section h4,
-.footer-section h2 {
-  color: var(--cor-primaria);
-}
-.footer-section h3 {
-  color: var(--cor-secundaria);
-}
-
-.footer-section a {
-  color: var(--texto-claro);
-  text-decoration: none;
-  display: block;
-  margin: 16px 0px;
-}
-
-.footer-section a:hover {
-  text-decoration: underline;
+  font-family: "Work Sans", sans-serif;
+  & h4,
+  h2 {
+    font-family: "Tomorrow", sans-serif;
+    color: var(--cor-primaria);
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  & h3 {
+    color: var(--cor-secundaria);
+    font-family: "Tomorrow", sans-serif;
+  }
+  & a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    display: block;
+    margin: 16px 0px;
+  }
+  & a:hover {
+    text-decoration: underline;
+  }
 }
 
 .footer-bottom {
